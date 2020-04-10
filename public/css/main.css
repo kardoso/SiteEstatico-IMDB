@@ -8,16 +8,23 @@
 
 body,
 html {
-	height: 100%;
+	margin: 0;
 }
 
 .hero {
+	width: 100%;
+}
+
+.hero-img {
+	margin: 0;
 	background-image: url("../img/capa-madmax2.jpg");
 	height: 100%;
+	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+	position: fixed;
+	z-index: -1;
 }
 
 .hero-menu {
