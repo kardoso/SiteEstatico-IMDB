@@ -179,6 +179,35 @@ html {
 	color: #e5bc00;
 }
 
+.menu {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.menu-list {
+	display: flex;
+	list-style: none;
+}
+
+.menu-list-item {
+	padding: 24px 24px;
+}
+
+.menu-list a {
+	text-decoration: none;
+	color: #e5bc00;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+	border-bottom: 3px solid #fff;
+}
+
+.menu-list a:hover {
+	border-color: #e5bc00;
+}
+
 @media screen and (max-width:720px) {
 	.container {
 		flex-direction: column;
@@ -194,5 +223,10 @@ html {
 
 	.hero-title {
 		font-size: 42px;
+	}
+
+	.menu-list {
+		flex-direction: column;
+		text-align: center;
 	}
 }
