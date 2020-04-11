@@ -349,6 +349,57 @@ html {
 	margin: 0px;
 }
 
+footer {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .container {
+	display: flex;
+	width: 90%;
+	max-width: 960px;
+	margin: 16px;
+}
+
+.social-links {
+	margin: auto;
+	margin-right: 0;
+}
+
+.social-links a {
+	color: #ccc;
+	text-decoration: none;
+	font-size: 24px;
+	padding: 0px 16px;
+}
+
+.social-twitter {
+	transition-duration: 0.2s;
+}
+
+.social-twitter:hover {
+	transition-duration: 0.2s;
+	color: #55acee;
+}
+
+.social-facebook {
+	transition-duration: 0.2s;
+}
+
+.social-facebook:hover {
+	color: #3b5998;
+}
+
+.social-instagram {
+	transition-duration: 0.2s;
+}
+
+.social-instagram:hover {
+	color: #e95950;
+}
+
 @media screen and (max-width:720px) {
 	.container {
 		flex-direction: column;
@@ -374,5 +425,15 @@ html {
 	.movies-list {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	footer .container {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social-links {
+		margin: 16px;
 	}
 }
