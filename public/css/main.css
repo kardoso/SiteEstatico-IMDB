@@ -332,22 +332,22 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-weight: bold;
 }
 
 .movie-info-rating i {
 	cursor: pointer;
-	color: #ddd;
+	color: #ccc;
+	font-size: 22px;
 	margin: 3px;
 	transition-duration: 0.2s;
 }
 
 .movie-info-rating i:hover {
-	font-size: 24px;
+	font-size: 28px;
 	color: #e74c3c;
 	margin: 0px;
 }
-
-
 
 @media screen and (max-width:720px) {
 	.container {
