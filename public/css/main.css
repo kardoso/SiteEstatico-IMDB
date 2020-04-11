@@ -213,6 +213,142 @@ html {
 	border-color: #e5bc00;
 }
 
+.catalog {
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: center;
+}
+
+.movies-list {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+	max-width: 960px;
+	list-style: none;
+}
+
+.movies-list-item {
+	height: 435px;
+	width: 230px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+	height: 340px;
+	width: 100%;
+	position: relative;
+}
+
+.movie-poster img {
+	width: 100%;
+}
+
+.movie-poster-info {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition-duration: 0.2s;
+}
+
+.movies-list-item:hover .movie-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.movie-poster-info h3 {
+	color: #e5bc00;
+	text-transform: uppercase;
+	padding: 8px;
+}
+
+.movie-poster-info a {
+	text-decoration: none;
+}
+
+.movie-poster-link i {
+	font-size: 48px;
+	padding: 8px;
+	transition-duration: 0.1s;
+	color: #fff;
+}
+
+.movie-poster-link i:hover {
+	font-size: 52px;
+	padding: 6px;
+	color: #e5bc00;
+}
+
+.movie-info {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.movie-info h3 {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.movie-info-genter {
+	margin: 10px 0px;
+}
+
+.movie-info-genre a {
+	font-weight: lighter;
+	font-size: 12px;
+	color: #e5bc00;
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+
+.movie-info-genre a:hover {
+	text-decoration: underline;
+}
+
+.movie-info-rating {
+	padding-top: 10px;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.movie-info-rating i {
+	cursor: pointer;
+	color: #ddd;
+	margin: 3px;
+	transition-duration: 0.2s;
+}
+
+.movie-info-rating i:hover {
+	font-size: 24px;
+	color: #e74c3c;
+	margin: 0px;
+}
+
+
+
 @media screen and (max-width:720px) {
 	.container {
 		flex-direction: column;
@@ -233,5 +369,10 @@ html {
 	.menu-list {
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.movies-list {
+		flex-direction: column;
+		align-items: center;
 	}
 }
