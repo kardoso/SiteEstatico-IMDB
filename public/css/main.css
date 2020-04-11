@@ -178,3 +178,21 @@ html {
 .hero-info p+p {
 	color: #e5bc00;
 }
+
+@media screen and (max-width:720px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.hero-list-item {
+		padding: 24px 10px;
+	}
+
+	.hero-user p {
+		display: none;
+	}
+
+	.hero-title {
+		font-size: 42px;
+	}
+}
